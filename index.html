@@ -84,6 +84,28 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
 .date-countdown strong {font-weight:400;line-height:1.2;font-size:5cqw;color:#93636a;}
 .date-countdown small {font-size:2cqw;letter-spacing:.08em;color:#9b767a;margin-top:.45cqw;}
 
+/* Frase y contador flotantes justo entre las tarjetas: sin alterar sus alturas. */
+.countdown-bridge{position:relative;height:0;z-index:4;pointer-events:none;}
+.countdown-bridge-inner{
+  position:absolute;top:0;left:50%;transform:translate(-50%,-50%);
+  width:73%;display:flex;flex-direction:column;align-items:center;
+  gap:.95cqw;text-align:center;color:#80575a;
+  font-family:Georgia,"Times New Roman",serif;
+}
+.countdown-bridge .date-count-label{
+  margin:0;font-size:3.35cqw;line-height:1.15;
+  font-style:italic;color:#865b64;white-space:nowrap;
+  text-shadow:0 1px 2px rgba(255,250,246,.65);
+}
+.countdown-bridge .date-countdown{width:100%;gap:.85cqw;}
+.countdown-bridge .date-countdown div{
+  padding:.67cqw .15cqw .52cqw;border-radius:1.2cqw;
+  background:rgba(251,239,235,.52);
+}
+.countdown-bridge .date-countdown strong{font-size:4.25cqw;line-height:1.05;}
+.countdown-bridge .date-countdown small{font-size:1.82cqw;margin-top:.32cqw;}
+
+
 /* Cada bloque queda dentro de su recuadro floral, sin tocar el título ni los adornos. */
 /* La etiqueta PNG RGBA va flotando sobre el fondo floral inmóvil, sin máscaras poligonales. */
 .location-panel > img.location-ornament {z-index:1;object-fit:contain;filter:drop-shadow(0 .45cqw .95cqw rgba(112,67,78,.13));}
@@ -232,6 +254,14 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
     <div class="date-calendar" id="dateCalendar" role="group" aria-label="Diciembre de 2026, viernes 11 señalado"></div>
     <div class="date-caption">11 DE DICIEMBRE · 6:00 P. M.</div>
     <div class="date-rule" aria-hidden="true">✦ · ♡ · ✦</div>
+
+   </div>
+  </div>
+
+  <!-- Frase y cuenta regresiva centradas en el hueco entre las dos tarjetas;
+       no añade altura ni interfiere con el fondo floral ni el desplazamiento. -->
+  <div class="countdown-bridge" aria-label="Cuenta regresiva para mis XV años">
+   <div class="countdown-bridge-inner">
     <div class="date-count-label">Faltan para mis XV años</div>
     <div class="date-countdown" id="dateCountdown" role="timer" aria-label="Cuenta regresiva para el 11 de diciembre de 2026">
      <div><strong data-until="days">00</strong><small>DÍAS</small></div>
