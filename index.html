@@ -55,18 +55,7 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
 .story-panel > img {display:block;position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;transform:none;filter:none;pointer-events:none;user-select:none;}
 /* Fondo inmóvil durante el desplazamiento: las etiquetas pasan por encima. */
 #parents {background:#eddad7 url("fondo-floral-limpio.jpg") center / contain no-repeat;}
-.parents-panel,.floral-card-panel,.date-panel,.location-panel {background:transparent;}
-/* La lámina floral no debe ocupar una pantalla 9:16: su formato real es mucho más corto. */
-.floral-card-panel {aspect-ratio:1122/1425;}
-.floral-card-panel > img.floral-card-ornament {z-index:1;object-fit:contain;object-position:center;filter:drop-shadow(0 .55cqw 1.15cqw rgba(112,67,78,.15));}
-.floral-card-message {
- position:absolute;z-index:2;top:29%;bottom:28%;left:18%;right:18%;
- display:flex;align-items:center;justify-content:center;
- text-align:center;pointer-events:none;color:#80535e;
- font:normal 5.05cqw/1.5 Georgia,"Times New Roman",serif;
- letter-spacing:.012em;text-shadow:0 1px 1px rgba(255,249,245,.55);
-}
-.floral-card-message p {margin:0;max-width:100%;text-wrap:balance;}
+.parents-panel,.date-panel,.location-panel {background:transparent;}
 /* Padres y padrinos: PNG transparente auténtico, conservando bordes y texto. */
 .parents-panel > img.ornamental-label {z-index:1;filter:drop-shadow(0 .55cqw 1.1cqw rgba(112,67,78,.13));}
 /* Etiqueta del calendario: PNG real con canal alfa, sin polígonos CSS. */
@@ -251,10 +240,6 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
   <div class="story-panel parents-panel" aria-label="Padres y padrinos en una etiqueta ornamental independiente sobre fondo floral">
    <img class="ornamental-label" src="padres-padrinos-version-aprobada.png" draggable="false" alt="Con la bendición de Dios y el amor de toda mi familia, me siento muy feliz de llegar a este momento de mi vida. Mis Padres: Miguel Ángel Ayala González y Marisol Zamudio Miranda. Padrinos: Roberto Carlos Juárez Garibay y Yarely Zamudio Miranda.">
    <div class="hidden-tool"><button id="back" type="button" aria-label="Reiniciar invitación y volver a la portada" title="Reiniciar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.6 6.4"/><path d="M3 4v7h7"/></svg></button></div>
-  </div>
-  <div class="story-panel floral-card-panel" aria-label="Mensaje de Valeria con la bendición de Dios y el amor de su familia">
-   <img class="floral-card-ornament" src="marco-floral-entre-padres-y-fecha.png" draggable="false" alt="Marco floral rosa empolvado que enmarca el mensaje de Valeria.">
-   <div class="floral-card-message"><p>Con la bendición de Dios y el amor de toda mi familia, me siento muy feliz de llegar a este momento de mi vida.</p></div>
   </div>
   <div class="story-panel date-panel" aria-label="Hay noches que se viven una vez y se recuerdan toda la vida. Espero que seas parte de la mía. Calendario de diciembre de 2026 y cuenta regresiva.">
    <!-- Etiqueta de una sola pieza, con transparencia real y contorno suavizado; fondo floral inmóvil debajo. -->
