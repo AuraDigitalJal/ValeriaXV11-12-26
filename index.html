@@ -24,7 +24,7 @@
 <title>Valeria Guadalupe · Mis XV años | Aura Digital</title>
 <link rel="preload" as="image" href="portada.jpg">
 <link rel="preload" as="image" href="fondo-floral-limpio.jpg">
-<link rel="preload" as="image" href="https://raw.githubusercontent.com/AuraDigitalJal/AuraDigitalJal.github.io/main/pruebas/valeria-seedance-2026/padres-padrinos-etiqueta.png">
+<link rel="preload" as="image" href="padres-padrinos-corregida.png">
 <style>
 :root { color-scheme:light; --ink:#7b5157; --rose:#af7d84; --paper:#fff8f3; }
 * { box-sizing:border-box; }
@@ -249,7 +249,7 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
 <section id="parents" class="scene" aria-label="Padres, padrinos y fecha de los XV años" aria-hidden="true">
  <div class="story-scroll" id="storyScroll" aria-label="Desliza hacia arriba para ver el calendario">
   <div class="story-panel parents-panel" aria-label="Padres y padrinos en una etiqueta ornamental independiente sobre fondo floral">
-   <img class="ornamental-label" src="https://raw.githubusercontent.com/AuraDigitalJal/AuraDigitalJal.github.io/main/pruebas/valeria-seedance-2026/padres-padrinos-etiqueta.png" draggable="false" alt="Con la bendición de Dios y el amor de mis padres Miguel Ángel Ayala González y Marisol Zamudio Miranda, y en compañía de mis padrinos Roberto Carlos Juárez Garibay y Yarely Zamudio Miranda.">
+   <img class="ornamental-label" src="padres-padrinos-corregida.png" draggable="false" alt="Con la bendición de Dios y el amor de mis padres Miguel Ángel Ayala González y Marisol Zamudio Miranda, y en compañía de mis padrinos Roberto Carlos Juárez Garibay y Yarely Zamudio Miranda.">
    <div class="hidden-tool"><button id="back" type="button" aria-label="Reiniciar invitación y volver a la portada" title="Reiniciar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11a9 9 0 1 1 2.6 6.4"/><path d="M3 4v7h7"/></svg></button></div>
   </div>
   <div class="story-panel floral-card-panel" aria-label="Mensaje de Valeria con la bendición de Dios y el amor de su familia">
@@ -406,7 +406,7 @@ video.addEventListener("error",()=>{activeVideo=false;msg("No se pudo cargar el 
 video.addEventListener("timeupdate",()=>{if(activeVideo&&Number.isFinite(video.duration)&&video.duration-video.currentTime<0.065)finish();});
 document.addEventListener("visibilitychange",()=>{if(document.hidden&&activeVideo)video.pause();else if(!document.hidden&&activeVideo)video.play().catch(()=>finish());});
 const preloaded=new Image();preloaded.src="fondo-floral-limpio.jpg";
-const preloadedLabel=new Image();preloadedLabel.src="https://raw.githubusercontent.com/AuraDigitalJal/AuraDigitalJal.github.io/main/pruebas/valeria-seedance-2026/padres-padrinos-etiqueta.png";
+const preloadedLabel=new Image();preloadedLabel.src="padres-padrinos-corregida.png";
 const storyScroll=document.getElementById("storyScroll");
 
 const calendar=document.getElementById("dateCalendar");
