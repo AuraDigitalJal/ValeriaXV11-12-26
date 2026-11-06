@@ -215,6 +215,15 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
 #notice { position:absolute;z-index:8;left:6%;right:6%;bottom:7%;background:#fff9f2ed;color:#805460;border-radius:12px;padding:13px;text-align:center;font-size:13px;box-shadow:0 3px 12px #775e6240; }
 [hidden] { display:none!important; }
 @media (prefers-reduced-motion:reduce) { .scene {transition:none} }
+
+/* Crédito de Aura Digital: sutil, sin franja y dentro de la última tarjeta */
+.rsvp-detail .aura-brand-credit{margin:.6cqw auto 0;padding:0;width:auto;max-width:100%;background:transparent;border:0;box-shadow:none;text-align:center;position:relative;z-index:2;flex-shrink:0}
+.rsvp-detail .aura-brand-credit a{display:inline-flex;flex-direction:column;align-items:center;justify-content:center;gap:.2cqw;padding:.8cqw 1.8cqw;text-decoration:none;color:#885f68;transition:opacity .2s ease}
+.rsvp-detail .aura-brand-credit a:hover{opacity:.75}
+.rsvp-detail .aura-brand-credit a:focus-visible{outline:2px solid #af7d84;outline-offset:2px}
+.rsvp-detail .aura-brand-credit-kicker{font:400 clamp(8px,2.3cqw,9px)/1.25 Georgia,serif;color:#a18389}
+.rsvp-detail .aura-brand-credit strong{font:500 clamp(10px,2.8cqw,12px)/1.25 Georgia,serif;letter-spacing:.11em;color:#8f606a}
+.rsvp-detail .aura-brand-credit-link{font:400 clamp(8px,2.3cqw,9px)/1.25 Georgia,serif;color:#a18389;text-decoration:underline;text-underline-offset:2px}
 </style>
 </head>
 <body>
@@ -317,6 +326,7 @@ main { width:100%;height:100vh;height:100dvh;display:grid;place-items:center;ove
       <span>Confirmar por WhatsApp</span>
      </a>
      <p class="rsvp-note">De preferencia, confirma antes del 15 de noviembre de 2026.</p>
+     <div class="aura-brand-credit" aria-label="Créditos de diseño"><a href="https://auradigitaljal.com/" target="_blank" rel="noopener noreferrer" aria-label="Creado por Aura Digital. Conoce nuestras invitaciones"><span class="aura-brand-credit-kicker">Creado por</span><strong>AURA DIGITAL</strong><span class="aura-brand-credit-link">Conoce nuestras invitaciones</span></a></div>
     </section>
     <div class="final-garnish" aria-hidden="true">❧ ♥ ❧</div>
    </div>
